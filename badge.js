@@ -2,8 +2,8 @@
 
 // eslint-disable-next-line no-unused-vars
 const setBadgeIcon = () => {
-	chrome.browserAction.setIcon({ path: options.autoCloseTab ? "images/auto_close_16.png" : "images/manual_close_16.png" });
-	if (environment.isFirefox) browser.browserAction.setBadgeTextColor({ color: "white" });
+	chrome.action.setIcon({ path: options.autoCloseTab ? "images/auto_close_16.png" : "images/manual_close_16.png" });
+	if (environment.isFirefox) browser.action.setBadgeTextColor({ color: "white" });
 };
 
 const setBadge = async (windowId, activeTabId) => {
